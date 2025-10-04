@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Assis - Eletricista</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo" onclick="scrollToSection('home')">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Assis Serviços Elétricos</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link" onclick="scrollToSection('home')">Início</a></li>
+                    <li><a href="#about" class="nav-link" onclick="scrollToSection('about')">Sobre</a></li>
+                    <li><a href="#services" class="nav-link" onclick="scrollToSection('services')">Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link" onclick="scrollToSection('portfolio')">Trabalhos</a></li>
+                    <li><a href="#contact" class="nav-link" onclick="scrollToSection('contact')">Contato</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Soluções Elétricas</span>
+                    <br>Profissionais
+                </h1>
+                <p class="hero-description">
+                    Eletricista especializado em instalações com mais de 3 anos de experiência. Serviços seguros, rápidos e com garantia.
+                </p>
+                <div class="hero-buttons">
+                    <button class="cta-button primary" onclick="scrollToSection('contact')">
+                        Solicitar Orçamento
+                    </button>
+                    <button class="cta-button secondary" onclick="scrollToSection('portfolio')">
+                        Ver Trabalhos
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic">
+                    <div class="electrical-circuit">
+                        <div class="circuit-line"></div>
+                        <div class="circuit-node"></div>
+                        <div class="circuit-spark">⚡</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Eletricista especializado em instalações, oferecendo mais de 3 anos de experiência no mercado. Atendo com agilidade, segurança e qualidade, sempre seguindo as normas técnicas e garantindo total satisfação dos clientes. Cada projeto é executado com responsabilidade e compromisso, entregando um serviço confiável e duradouro.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Projetos Concluídos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfação dos Clientes</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3>Especialidades</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">Instalações Elétricas</div>
+                        <div class="skill-item">Iluminação</div>
+                        <div class="skill-item">Tecnologia e Automação</div>
+                        <div class="skill-item">Segurança e Comunicação</div>
+                        <div class="skill-item">Reparos e Manutenções</div>
+                        <div class="skill-item">Instalação de Equipamentos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Serviços Elétricos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔌</div>
+                    <h3 class="service-title">Instalações Elétricas</h3>
+                    <p class="service-description">
+                        Padrão de entrada (ligação da concessionária)
+Disjuntores, quadros de energia e barramentos
+Instalação de tomadas, interruptores e pontos de luz
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">Iluminação</h3>
+                    <p class="service-description">
+                        Instalação de lustres, pendentes, arandelas e plafons
+Projetos de iluminação LED para economia de energia
+Sensores de presença e dimmers (controle de intensidade da luz)
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-title">Tecnologia e Automação</h3>
+                    <p class="service-description">
+                        Automação residencial com assistentes virtuais (Alexa, Google Home, etc.)
+Instalação de interruptores inteligentes e lâmpadas smart
+Integração de equipamentos para casa conectada
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3 class="service-title">Segurança e Comunicação</h3>
+                    <p class="service-description">
+                        Instalação de interfones e videoporteiros
+Câmeras de segurança (CFTV) e sistemas de monitoramento
+Alarmes e fechaduras eletrônicas
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Reparos e Manutenções</h3>
+                    <p class="service-description">
+                        Troca de fiação antiga ou danificada
+Correção de curtos-circuitos e falhas elétricas
+Manutenção preventiva para evitar sobrecargas
+Aumento de carga elétrica para novos aparelhos
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3 class="service-title">Instalação de Equipamentos</h3>
+                    <p class="service-description">
+                        Chuveiros e aquecedores elétricos
+Ventiladores de teto e exaustores
+Ar-condicionado (parte elétrica)
+Eletrodomésticos em geral
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2 class="section-title">Trabalhos Realizados</h2>
+        <div class="portfolio-grid">
+            
+            <div class="portfolio-item" data-category="residencial">
+                <div class="portfolio-image">
+                    <img src="imagens/trabalho1.jpg" alt="Casa Residencial - Zona Sul" class="portfolio-img">
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Casa Residencial - Zona Sul</h3>
+                    <p class="portfolio-description">Instalação elétrica completa em casa de 120m²</p>
+                    <span class="portfolio-category">Residencial</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="reforma">
+                <div class="portfolio-image">
+                    <img src="imagens/trabalho2.jpg" alt="Reforma Elétrica - Apartamento" class="portfolio-img">
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Reforma Elétrica - Apartamento</h3>
+                    <p class="portfolio-description">Modernização completa do sistema elétrico</p>
+                    <span class="portfolio-category">Reforma</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="iluminacao">
+                <div class="portfolio-image">
+                    <img src="imagens/trabalho3.jpg" alt="Projeto de Iluminação LED" class="portfolio-img">
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Projeto de Iluminação</h3>
+                    <p class="portfolio-description">Instalação de sistema de iluminação inteligente</p>
+                    <span class="portfolio-category">Iluminação</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="quadro">
+                <div class="portfolio-image">
+                    <img src="imagens/trabalho4.jpg" alt="Quadro Elétrico Moderno" class="portfolio-img">
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Iluminação Elétrica Moderna</h3>
+                    <p class="portfolio-description">Adequação de quadro elétrico às normas atuais</p>
+                    <span class="portfolio-category">Quadro Elétrico</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="quadro">
+                <div class="portfolio-image">
+                    <img src="imagens/trabalho5.jpg" alt="Quadro Elétrico Moderno" class="portfolio-img">
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Interruptor inteligente</h3>
+                    <p class="portfolio-description">Muito usado em projetos de automação residencial e decoração moderna</p>
+                    <span class="portfolio-category">Interruptor</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="quadro">
+                <div class="portfolio-image">
+                    <img src="imagens/trabalho6.jpg" alt="Quadro Elétrico Moderno" class="portfolio-img">
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Distribuição elétrica</h3>
+                    <p class="portfolio-description">Distribuição correta da energia em diferentes circuitos da casa ou empresa.</p>
+                    <span class="portfolio-category">Energia</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Solicite seu Orçamento</h3>
+                    <p>Atendimento rápido e profissional para suas necessidades elétricas residenciais. </p>
+                    <b>Diferenciais</b>
+                    <ul class="info-list" style="margin-bottom: 20px;">
+  <li>Orçamento grátis</li>
+  <li>Emissão de nota fiscal</li>
+  <li>Garantia nos serviços prestados</li>
+  <li>Aceitamos cartões de crédito e débito</li>
+</ul>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📱</span>
+                            <div class="contact-details">
+                                <strong>WhatsApp</strong>
+                                <p>
+                                    <a href="https://wa.me/5521964049156?text=Olá! Gostaria de solicitar um orçamento para serviços elétricos." 
+                                       target="_blank" class="contact-link">
+                                       (21) 96404-9156
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">📘</span>
+                            <div class="contact-details">
+                                <strong>Facebook</strong>
+                                <p><a href="https://www.facebook.com/people/Assis-Dos-Santos/61560109996477/" class="contact-link">Assis dos Santos</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-details">
+                                <strong>Email</strong>
+                                <p><a href="mailto:assisservicoseletricos@gmail.com?text=Olá! Gostaria de solicitar um orçamento para serviços elétricos." class="contact-link">assisservicoseletricos@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-details">
+                                <strong>Atendimento</strong>
+                                <p>Rio de Janeiro - RJ e Região</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Seu Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Tipo de Serviço</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="Instalações Elétricas">Instalações Elétricas</option>
+                                <option value="Iluminação">Iluminação</option>
+                                <option value="Tecnologia e Automação">Tecnologia e Automação</option>
+                                <option value="Segurança e Comunicação">Segurança e Comunicação</option>
+                                <option value="Reparos e Manutenções">Reparos e Manutenções</option>
+                                <option value="Instalação de Equipamentos">Instalação de Equipamentos</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Descrição do Serviço</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button primary" id="submit-btn">
+                            Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Assis Serviços Elétricos</span>
+                    </div>
+                    <p>Soluções elétricas seguras e profissionais.</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li>Instalações Elétricas</li>
+                            <li>Iluminação</li>
+                            <li>Tecnologia e Automação</li>
+                            <li>Reparos e Manutenções</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li>📱 (21) 96404-9156</li>
+                            <li>📘 Assis dos Santos</li>
+                            <li>📧 assisservicoseletricos@gmail.com</li>
+                            <li>📍 Rio de Janeiro - RJ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pedro Gomes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="notification" class="notification hidden">
+        <span id="notification-message"></span>
+        <button id="notification-close">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
